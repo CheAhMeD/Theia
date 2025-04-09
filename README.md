@@ -15,11 +15,15 @@ It is composed of a custom PCB and a custom 3D enclosure (with optional stand).
 <img src="/images/IMG_2424.jpeg" width="400" height="300">
 
 ## PCB
-The PCB has been created with KiCAD software. The project is open sourced.
-Please use the gerber files provided if you want to order a PCB (The impedance control is important for the USB part to work). 
+The PCB has been created with KiCAD software. 
+Theia V1 Schematics are available in [here]("PCB/theia_v1_schematics.pdf")
+The project is open source (If you need the KiCad project files drop a message).
+Please use the gerber files provided (/PCB/production.zip) if you want to order a PCB (The impedance control is important for the USB part to work). 
 
 <br>
-<img src="/images/IMG_2426.jpeg" width="400" height="300">
+<img src="PCB/theia_v1_top.png" width="400" height="300">
+<br>
+<img src="PCB/theia_v1_bottom.png" width="400" height="300">
 
 ## Firmware
 The "Firmware" directory contains a Arduino IDE project for Theia. You should be able to build and load it into a camera using the normal process.
