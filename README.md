@@ -1,5 +1,5 @@
 
-# Theia Thermal Imaging Cameras
+# Theia Thermal Imaging Camera
 
 <br>
 <img src="/images/logo_full.png" width="240" height="60">
