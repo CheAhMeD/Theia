@@ -25,16 +25,21 @@ Image files (RAW or BMP) are stored in the attached SD card. If none is attached
 
 ## Theia GUI
 
-![GUI](screenshots/TheiaGUI.png)
+<br>
+<img src="/screenshots/TheiaGUI.png" width="480" height="360">
 
 ### Boot Screen
-
+<br>
+<img src="/screenshots/splash.png" width="320" height="240">
 ### Main Screen 
-
+<br>
+<img src="/screenshots/mainScreen.png" width="320" height="240">
 ### Browse Screen
-
+<br>
+<img src="/screenshots/browseScreen.png" width="320" height="240">
 ### Settings Screen
-
+<br>
+<img src="/screenshots/settingsScreen.png" width="320" height="240">
 ## Theia Serial
 
 
