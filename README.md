@@ -15,9 +15,9 @@ It is composed of a custom PCB and a custom 3D enclosure (with optional stand).
 <img src="/images/IMG_2424.jpeg" width="400" height="300">
 
 ## PCB
-The PCB has been created with KiCAD software. 
-Theia V1 Schematics are available in [here]("PCB/theia_v1_schematics.pdf")
-The project is open source (If you need the KiCad project files drop a message).
+The PCB has been created with KiCAD software. <br>
+Theia V1 Schematics are available in PCB Folder (/PCB/theia_v1_schematics.pdf).<br>
+The project is open source (If you need the KiCad project files drop a message). <br>
 Please use the gerber files provided (/PCB/production.zip) if you want to order a PCB (The impedance control is important for the USB part to work). 
 
 <br>
