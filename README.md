@@ -4,11 +4,11 @@
 <br>
 <img src="/images/logo_full.png" width="240" height="60">
 
-Theia is a DIY thermal camera designed around the ESP32-S3 and Lepton 3.5.
+Theia is a DIY thermal camera designed around the ESP32-S3 and Lepton 3.5. <br>
 It is started as a way to explore the Lepton 3.5 sensor and its abilities and turned to be a full (yet simple) thermal camera.
 
 ## Theia Camera
-Theia is a well featured, open source camera with a local touchscreen display, local storage and a USB interface.
+Theia is a well featured, open source camera with a local touchscreen display, local storage and a USB interface. <br>
 It is composed of a custom PCB and a custom 3D enclosure (with optional stand).
 
 <br>
@@ -34,7 +34,7 @@ Due to the custom pcb, to be able to upload the compiled firmware you need to se
 <img src="/images/conf.png" width="120" height="200">
 
 ## Enclosure
-A simple 2 piece enclosure designed to be 3D printed. Design was done with the online editor "onshape". 
+A simple 2 piece enclosure designed to be 3D printed. Design was done with the online editor "onshape". <br>
 The OnShape project folder can be accessed [here](https://cad.onshape.com/documents/da13b0f788f852a632ae2d5d/w/38727c48ed0b2ebb656da7c0/e/01333a5db09d1259df274e6b) and the generated STL files are included in the Enclosure directory.
 
 <br>
