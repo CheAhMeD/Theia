@@ -34,7 +34,7 @@ A simple 2 piece enclosure designed to be 3D printed. Design was done with the o
 The OnShape project folder can be accessed [here](https://cad.onshape.com/documents/da13b0f788f852a632ae2d5d/w/38727c48ed0b2ebb656da7c0/e/01333a5db09d1259df274e6b) and the generated STL files are included in the Enclosure directory.
 
 <br>
-<img src="/images/Enclosure.png" width="400" height="300">
+<img src="/images/Enclosure.png" width="300" height="300">
 
 ## Desktop App
 This DesktopApp folder contains the companion desktop application for Theia. It communicates with the cameras via a USB (Serial) connection using a predefined set of commands. 
@@ -46,7 +46,7 @@ More details on the DesktopApp are available in /DesktopApp/README.md
 Simple Examples using a python script to perform basic operations on the camera.
 
 ## Acknowledgements
-A lot of useful information were collected thanks the brilliant work done in tCam (By [Dan Julio](https://github.com/danjulio)) and diy-thermocam (By [Max Ritter](https://github.com/maxritter))
+A lot of useful information were collected thanks to the brilliant work done in tCam (By [Dan Julio](https://github.com/danjulio)) and diy-thermocam (By [Max Ritter](https://github.com/maxritter))
 
  - [tCam](https://github.com/danjulio/tCam)
  - [DIY-Thermocam](https://github.com/maxritter/diy-thermocam)
