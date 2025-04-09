@@ -32,6 +32,9 @@ The "Firmware" directory contains a Arduino IDE project for Theia. You should be
 Due to the custom pcb, to be able to upload the compiled firmware you need to set the Arduino Environment as follow:
 <br>
 <img src="/images/conf.png" width="120" height="200">
+<br>
+<br>
+More details on the Firmware are available in /Firmware/README.md
 
 ## Enclosure
 A simple 2 piece enclosure designed to be 3D printed. Design was done with the online editor "onshape". <br>
