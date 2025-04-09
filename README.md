@@ -23,13 +23,13 @@ The "Firmware" directory contains a Arduino IDE project for Theia. You should be
 
 ### Note:
 Due to the custom pcb, to be able to upload the compiled firmware you need to set the Arduino Environment as follow:
-![CONF](/images/conf.png)
+<img src="/images/conf.png" width="80" height="120">
 
 ## Enclosure
 A simple 2 piece enclosure designed to be 3D printed. Design was done with the online editor "onshape". 
 The OnShape project folder can be accessed [here](https://cad.onshape.com/documents/da13b0f788f852a632ae2d5d/w/38727c48ed0b2ebb656da7c0/e/01333a5db09d1259df274e6b) and the generated STL files are included in the Enclosure directory.
 
-![3D](/images/enclosure.png)
+![3D](/images/Enclosure.png)
 
 ## Desktop App
 This DesktopApp folder contains the companion desktop application for Theia. It communicates with the cameras via a USB (Serial) connection using a predefined set of commands. 
