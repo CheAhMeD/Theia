@@ -23,26 +23,78 @@ The USB connector is used to provide power to the camera and as a programming/co
 ### Theia SD Card
 Image files (RAW or BMP) are stored in the attached SD card. If none is attached the firmware will detect the absence of the SD Card and the user won't be able to save any images nor browse the content of the card. <br> Files are saved under RAW or BMP format (.timg or .bmp) after being scaled to 320x240.
 
+#### Note:
+**The SD Card must be formatted in FAT32.**
+**The SD Card must contain the logo under "/sys/splash_logo.bmp" path. Or you can change the firmware to display your logo from another location.**
+
 ## Theia GUI
 
 <br>
 <img src="screenshots/TheiaGUI.png" width="520" height="360">
 
 ### Boot Screen
+
+A timed out screen that displays the logo and a boot log message.
+
 <br>
 <img src="screenshots/splash.png" width="480" height="320">
 
 ### Main Screen 
+
+Camera main screen that contain the lepton stream and some controls.
+
 <br>
 <img src="screenshots/mainScreen.png" width="480" height="320">
 
+#### Controls
+
+| **Control** | **Function** |
+|------|------|
+| Snap Button  | Takes a snap and saves a BMP/TIMG image in the SD card under "Lepton" directory (a status message box will appear once pressed). |
+| Browse Button  | Opens the browse screen. |
+| FFC Button   | Performs a manual FFC. |
+| Settings Button | Opens the settings screen.  |
+|  Cursor    | Pressing on the lepton image updates the cursor position and the cursor temperature.   |
+
 ### Browse Screen
+
+SD card browse screen. A very simple gui to browse and display the content of "Lepton" directory. <br>
+It shows the file name, file number and total files in the directory.
+
 <br>
 <img src="screenshots/browseScreen.png" width="480" height="320">
 
+#### Controls
+
+| **Button** | **Function** |
+|------|------|
+| Close Button  | Returns to the main screen. |
+| Next Button  | Displays the next image file. |
+| Rewind Button   | Goes back to the first file in the directory. |
+| Detete Button | (In blue) Deletes the current displayed image (a confirmation message box will appear once pressed).  |
+|  Delete All Button    | (In red) Deletes all the files in Lepton Directory (a confirmation message box will appear once pressed).  |
+
 ### Settings Screen
+
+Camera settings screen. It offers some controls over the behaviour of the camera as well as some controls over the lepton sensor.
+
 <br>
 <img src="screenshots/settingsScreen.png" width="480" height="320">
+
+#### Controls
+
+| **Control** | **Function** |
+|------|------|
+| Close Button  | Returns to the main screen. |
+| Lepton Color Map | Updates the color map of the lepton image from the available 12 palettes. |
+| Reset Button   | Resets the lepton sensor (a status message box will appear once pressed).  |
+| Reboot Button   | Reboots the lepton sensor (a status message box will appear once pressed). |
+| Gain Mode | Updates the lepton gain mode (High / Low / Auto). |
+| Temp Unit   | Updates the temperature unit (°C / °F / K). |
+| Save Image BMP   | Switches between .bmp / .timg formats for the saved image (using snap button). |
+| Brightness   | Updates the brightness of the display. |
+| Update Info   | Displays some diagnostics info in Theia Debug Info Box. |
+| Rotate Screen   | Rotates the screen 180°. |
 
 ## Theia Serial
 
