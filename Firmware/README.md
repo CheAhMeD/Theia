@@ -61,7 +61,7 @@ Get Commnad:
 Set Command:
 | **CMD ID** |  **DATA**  |
 |------------|------------|
-|   1 Byte   |   n Byte   |
+|   1 Byte   |   n Bytes  |
 
 #### Device (Response):
 
@@ -73,25 +73,33 @@ Unvalid Command Response:
 Get Response:
 | **ACK** | **CMD ID** | **DATA** | **CRC8** | 
 |---------|------------|----------|----------|
-|  0x10   | 1 Byte     | n Byte   | 1 Byte   | 
+|  0x10   | 1 Byte     | n Bytes  | 1 Byte   | 
 
 Set Response:
 | **ACK** | **CMD ID** | **STATE** |
 |---------|------------|-----------|
 |  0x10   | 1 Byte     |  1 Byte   |
 
+**STATE** is either success (0x01) or failure (0x00).
+
 ### Command list
 
-| **Command** | **Description** |
-|------|------|
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-|      |      |
-
+| **Command** | **Value** | **Description** |
+|------|------|------|
+| Get Lepton Status  |   0x73  |   Returns a frame containing the Lepton Camera status.  |
+| Get Lepton Diagnostics   |  0x64  | Returns a frame containing diagnostics data on the lepton.      |
+| Get Image   |  0x44   |   Returns a frame containing the raw data captured from the camera.   |
+|  Get Spot Temp  |   0x74   |   Returns a frame containing a string of current spotmeter temperature.  |
+|  Get Run Time    | 0x52   |   Returns a frame containing a string of current camera runtime.   |
+|  Get Storage Info   |   0x69   |  Returns a frame containing SD Card info.    |
+|      |      |      |
+|  Lepton Reboot    |   0x42   |   Reboots the lepton and returns a success/failure frame.  |
+|  Lepton Reset    |   0x72   |   Resets the lepton and returns a success/failure frame.  |
+|  Run FFC    |   0x46   |   Runs an FFC and returns a success/failure frame.  |
+|      |      |      |
+| Set ColorMap  |  0x43    |  Updates the colormap on the camera. Requires 1 byte of data (colormap id).    |
+| Set Lepton Gain |  0x47    |  Updates the lepton gain. Requires 1 byte of data (gain type).    |
+| Set Spotmeter Position |  0x70    |  Updates the position of the spotmeter on the camera. Requires 2 bytes of data (x and y).    |
 
 
 ## Authors
