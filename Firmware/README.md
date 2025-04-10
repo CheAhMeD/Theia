@@ -75,7 +75,7 @@ Get Response:
 |---------|------------|----------|----------|
 |  0x10   | 1 Byte     | n Bytes  | 1 Byte   | 
 
-Set Response:
+Set Response (Success/Failure Frame):
 | **ACK** | **CMD ID** | **STATE** |
 |---------|------------|-----------|
 |  0x10   | 1 Byte     |  1 Byte   |
@@ -101,6 +101,8 @@ Set Response:
 | Set Lepton Gain |  0x47    |  Updates the lepton gain. Requires 1 byte of data (gain type).    |
 | Set Spotmeter Position |  0x70    |  Updates the position of the spotmeter on the camera. Requires 2 bytes of data (x and y).    |
 
+#### NOTE:
+**For more details about the communication framing refer to Connection.h and Connection.cpp in firmware folder.**
 
 ## Authors
 
