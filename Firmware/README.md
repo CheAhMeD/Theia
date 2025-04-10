@@ -53,13 +53,32 @@ The communication is simplistic and based on frames. Meaning the host (Desktop A
 
 #### Host (Command):
 
-Get Command:
+Get Commnad:
 | **CMD ID** |
-|----------------|
-|   1 Byte             |
-|----------------|
+|------------|
+|   1 Byte   |
+
+Set Command:
+| **CMD ID** |  **DATA**  |
+|------------|------------|
+|   1 Byte   |   n Byte   |
 
 #### Device (Response):
+
+Unvalid Command Response:
+| **NAK** |
+|---------|
+|  0x05   |
+
+Get Response:
+| **ACK** | **CMD ID** | **DATA** | **CRC8** | 
+|---------|------------|----------|----------|
+|  0x10   | 1 Byte     | n Byte   | 1 Byte   | 
+
+Set Response:
+| **ACK** | **CMD ID** | **STATE** |
+|---------|------------|-----------|
+|  0x10   | 1 Byte     |  1 Byte   |
 
 ### Command list
 
