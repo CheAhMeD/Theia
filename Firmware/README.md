@@ -47,14 +47,19 @@ Image files (RAW or BMP) are stored in the attached SD card. If none is attached
 ## Theia Serial
 
 Theia Serial inteface is meant for basic controls over the camera using the native USB (In CDC mode) on the ESP32-S3. <br>
-The communication is simplistic and based on frames.
+The communication is simplistic and based on frames. Meaning the host (Desktop App | Python Script ...) sends a 1-byte command (Set | Get) to the camera and the camera responds with the adequate frame if the sent command corresponds to one of the commands else it responds with a NAK byte. <br>
 
 ### Data Frame
 
-| **SOF (0x00)** | **CMD ID** | **DATA** | **CRC** | **** | **** | **** | **** | **** | **** |
-|----------------|------------|----------|---------|------|------|------|------|------|------|
-|                |            |          |         |      |      |      |      |      |      |
-|----------------|------------|----------|---------|------|------|------|------|------|------|
+#### Host (Command):
+
+Get Command:
+| **CMD ID** |
+|----------------|
+|   1 Byte             |
+|----------------|
+
+#### Device (Response):
 
 ### Command list
 
