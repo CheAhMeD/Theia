@@ -6,7 +6,7 @@ theia_port = 'COM15'
 
 
 ser = serial.Serial(port=theia_port, 
-                    baudrate=115200, 
+                    baudrate=921600,
                     parity=serial.PARITY_NONE,
                     stopbits=serial.STOPBITS_ONE,
                     bytesize=serial.EIGHTBITS,
