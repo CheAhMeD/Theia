@@ -126,7 +126,7 @@
 #define LEP_IMAGE_CAPTURE_PERIOD_MS 7   // wait period after frame capture and display in ms
 
 // Use Debug Serial Port
-#define USE_DEBUG_SERIAL 1
+#define USE_DEBUG_SERIAL 0
 
 //EEPROM (Persistant Storage) 
 // TODO: add EEPROM address for other variables...
