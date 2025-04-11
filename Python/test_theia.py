@@ -1,7 +1,7 @@
 import serial
 import time
 
-## Replace port with Theia usb number
+## Replace port with Theia usb serial port
 theia_port = 'COM15'
 
 
