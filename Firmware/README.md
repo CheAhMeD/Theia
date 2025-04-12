@@ -25,7 +25,7 @@ Image files (RAW or BMP) are stored in the attached SD card. If none is attached
 
 #### Note:
 **The SD Card must be formatted in FAT32.**
-**The SD Card must contain the logo under "/sys/splash_logo.bmp" path. Or you can change the firmware to display your logo from another location.**
+**Theia Hardware doesn't provide a Card Detect signal, the firmware uses a dumb routines that checks if a certain file (.theia) exists on the SD Card to determine that the SD Card is attached. The file ".theia" is created at boot if it doesnt exist.**
 
 ## Theia GUI
 
