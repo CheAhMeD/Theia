@@ -267,8 +267,8 @@ void Lepton::transferStatus(void) {
   uint8_t gainMode = getGainMode();
   uint8_t gpioMode = getGpioMode();
   uint8_t pn = getPartNumber();
-  Serial.write((uint8_t*)&pn, sizeof(pn));
-  lepCRC.add((uint8_t *)&pn, sizeof(pn));
+  Serial.write(pn);
+  lepCRC.add(pn);
   Serial.write((uint8_t*)&sysStatus, sizeof(sysStatus));
   lepCRC.add((uint8_t *)&sysStatus, sizeof(sysStatus));
   Serial.write((uint8_t*)&upTime, sizeof(upTime));
@@ -277,10 +277,10 @@ void Lepton::transferStatus(void) {
   lepCRC.add((uint8_t *)&auxTemp, sizeof(auxTemp));
   Serial.write((uint8_t*)&fpaTemp, sizeof(fpaTemp));
   lepCRC.add((uint8_t *)&fpaTemp, sizeof(fpaTemp));
-  Serial.write((uint8_t*)&gainMode, sizeof(gainMode));
-  lepCRC.add((uint8_t *)&gainMode, sizeof(gainMode));
-  Serial.write((uint8_t*)&gpioMode, sizeof(gpioMode));
-  lepCRC.add((uint8_t *)&gpioMode, sizeof(gpioMode));
+  Serial.write(gainMode);
+  lepCRC.add(gainMode);
+  Serial.write(gpioMode);
+  lepCRC.add(gpioMode);
   // CRC
   Serial.write(lepCRC.calc());
 }
@@ -629,7 +629,7 @@ uint64_t Lepton::getSysStatus() {
   return ms_word << 48 | mword_2 << 32 | mword_1 << 16 | ls_word;
 }
 
-/* Get Lpton Camera Uptime */
+/* Get Lepton Camera Uptime */
 uint32_t Lepton::getUpTime() {
   // Request 2 bytes from data register
   byte package[1] = { 2 };

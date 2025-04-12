@@ -86,10 +86,10 @@ void transferLeptonRawData() {
 void transferLeptonDiagnostics() {
   Serial.write(CMD_ACK);
   Serial.write(CMD_GET_LEP_DIAGNOSTICS);
-  Serial.write((uint8_t *)&lepDiagnostics.syncErrorCounter, sizeof(uint32_t));
-  crc.add((uint8_t *)&lepDiagnostics.syncErrorCounter, sizeof(uint32_t));
-  Serial.write((uint8_t *)&lepDiagnostics.validFrameCounter, sizeof(uint32_t));
-  crc.add((uint8_t *)&lepDiagnostics.validFrameCounter, sizeof(uint32_t));
+  Serial.write((uint8_t *)&lepDiagnostics.syncErrorCounter, sizeof(lepDiagnostics.syncErrorCounter));
+  crc.add((uint8_t *)&lepDiagnostics.syncErrorCounter, sizeof(lepDiagnostics.syncErrorCounter));
+  Serial.write((uint8_t *)&lepDiagnostics.validFrameCounter, sizeof(lepDiagnostics.validFrameCounter));
+  crc.add((uint8_t *)&lepDiagnostics.validFrameCounter, sizeof(lepDiagnostics.validFrameCounter));
   // CRC
   Serial.write(crc.calc());
 }
