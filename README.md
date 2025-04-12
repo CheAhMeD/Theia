@@ -26,10 +26,10 @@ Please use the gerber files provided (/PCB/production.zip) if you want to order 
 <img src="PCB/theia_v1_bottom.png" width="400" height="300">
 
 ## Firmware
-The "Firmware" directory contains a Arduino IDE project for Theia. You should be able to build and load it into a camera using the normal process.
+The "Firmware" directory contains an Arduino IDE project for Theia (version 1). You should be able to build and load it into a camera using the normal process.
 
 ### Note:
-Due to the custom pcb, to be able to upload the compiled firmware you need to set the Arduino Environment as follow:
+Due to the custom pcb (no board package provided), to be able to upload the compiled firmware you need to set the Arduino Environment as follow:
 <br>
 <img src="/images/conf.png" width="120" height="200">
 <br>
