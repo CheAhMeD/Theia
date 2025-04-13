@@ -1,6 +1,6 @@
 ## Used Hardware
 ### Required
-- Theia PCB ([Schematics](PCB/theia_v1_schematics.pdf))
+- Theia PCB ([Schematics](theia_v1_schematics.pdf))
 - Lepton Flir 3.5 ([mouser](https://mou.sr/42w5bx5))
 - LCD IPS 3.5 Touch 9488 ([AliExpress](https://www.aliexpress.com/item/1005007513268466.html))
 - Custom 3D Case ([STL Files](Enclosure))
