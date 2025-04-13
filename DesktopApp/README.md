@@ -57,5 +57,28 @@ The app tool bar, beside establishing a connection, it provides some basic contr
 | Reset Button | Sends "reset" command to the camera. |
 | Info Button | Sends "get info" command to the camera and opens a dialog to display the received info. |
 
+### Image Controls
+
+The image preview section provides some info on the maximum & minimum temperatures (in °C) over the received image. You can also click anywhere on the image to select a spot and get the temperature. A cursor is dynamically drawn over the selected spot.
+
+<br>
+<img src="screenshots/img_controls.png" width="320" height="60">
+
+### Colormap Controls
+
+Clicking on either the left or the right side of the colormap would load another one of the predefined colormpas. Right for next and Left for previous. The name of the selected colormap is displayed and the and the color theme is reapplied on the dislayed image and histogram.
+
+<br>
+<img src="screenshots/colormap_controls.png" width="320" height="60">
+
+### Histogram Controls
+
+The histogram tool bar offers some basic control over the displayed figure.
+
+<br>
+<img src="screenshots/histogram_controls.png" width="320" height="60">
+
+more details about the controls can be found [here](https://matplotlib.org/3.2.2/users/navigation_toolbar.html).
+
 
 
