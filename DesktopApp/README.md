@@ -7,4 +7,4 @@ The application is developed using python (PySide6). A Windows image is provided
 ## Overview
 
 <br>
-<img src="/screenshots/controls.png" width="480" height="320">
+<img src="screenshots/controls.png" width="480" height="320">
