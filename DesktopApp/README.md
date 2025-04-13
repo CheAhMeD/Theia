@@ -44,7 +44,7 @@ After a successful connection the remaining controls will be enabled.
 The app tool bar, beside establishing a connection, it provides some basic controls. These buttons provide a way to send commands to the camera over the serial interface.
 
 <br>
-<img src="screenshots/cam_controls.png" width="60" height="320">
+<img src="screenshots/cam_controls.png" width="320" height="60">
 
 | **Control** | **Function** |
 |------|------|
