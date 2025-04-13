@@ -44,7 +44,7 @@ After a successful connection the remaining controls will be enabled.
 The app tool bar, beside establishing a connection, it provides some basic controls. These buttons provide a way to send commands to the camera over the serial interface.
 
 <br>
-<img src="screenshots/cam_controls.png" width="320" height="60">
+<img src="screenshots/cam_controls.png" width="320" height="40">
 
 | **Control** | **Function** |
 |------|------|
@@ -62,21 +62,21 @@ The app tool bar, beside establishing a connection, it provides some basic contr
 The image preview section provides some info on the maximum & minimum temperatures (in °C) over the received image. You can also click anywhere on the image to select a spot and get the temperature. A cursor is dynamically drawn over the selected spot.
 
 <br>
-<img src="screenshots/img_controls.png" width="320" height="60">
+<img src="screenshots/img_controls.png" width="320" height="240">
 
 ### Colormap Controls
 
 Clicking on either the left or the right side of the colormap would load another one of the predefined colormpas. Right for next and Left for previous. The name of the selected colormap is displayed and the and the color theme is reapplied on the dislayed image and histogram.
 
 <br>
-<img src="screenshots/colormap_controls.png" width="320" height="60">
+<img src="screenshots/colormap_controls.png" width="320" height="50">
 
 ### Histogram Controls
 
 The histogram tool bar offers some basic control over the displayed figure.
 
 <br>
-<img src="screenshots/histogram_controls.png" width="320" height="60">
+<img src="screenshots/histogram_controls.png" width="320" height="40">
 
 more details about the controls can be found [here](https://matplotlib.org/3.2.2/users/navigation_toolbar.html).
 
