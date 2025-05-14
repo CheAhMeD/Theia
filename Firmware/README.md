@@ -9,6 +9,7 @@ Theia firmware V1 is an Arduino IDE project. You need to have the Arduino core f
 [GUI] LVGL 8.3.0 <br> 
 [Timer] ESP32Time 2.0.6 <br>
 [Status Led] FastLED 3.9.13 <br>
+[CRC] CRC 1.0.3 (Rob Tillaart)
 
 ## Operating
 
